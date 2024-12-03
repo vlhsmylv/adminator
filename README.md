@@ -14,7 +14,7 @@ Adminator is an open-source admin panel generation tool that enables developers 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/adminator.git
+   git clone https://github.com/vlhsmylv/adminator.git
    cd adminator
    ```
 
