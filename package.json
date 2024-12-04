@@ -3,17 +3,39 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node .",
-    "start:dev": "nodemon ."
+    "start": "ts-node scripts/index.ts",
+    "dev": "nodemon scripts/index.ts",
+    "init:app": "cd web/app && npm install",
+    "start:app": "cd web/app && npm run dev",
+    "parse-schema": "ts-node scripts/parse-schema.ts",
+    "generate-models": "ts-node scripts/generate-models.ts",
+    "start:server": "ts-node web/index.ts",
+    "dev:server": "nodemon web/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/node": "^22.10.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
-    "nodemon": "^3.1.7"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.3",
+    "nodemon": "^3.1.7",
+    "swagger-ui-express": "^5.0.1",
+    "types": "^0.1.1",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/swagger-ui-express": "^4.1.7",
+    "tsx": "^4.19.2"
   }
 }

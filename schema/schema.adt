@@ -9,4 +9,4 @@ email string *    *    *  255
 id          string true true *  255
 title       string *    *    *  255
 content     string *    *    *  255
-author_id   string *    *    *  255
+author      User   *    *    *  *
